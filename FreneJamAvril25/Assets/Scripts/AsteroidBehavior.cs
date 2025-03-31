@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidBehavior : MonoBehaviour
+public class AsteroidBehavior : MonoBehaviour, IClickable
 {
     public RSE_OnClick RSE_OnClick;
     public RSE_OnAsteroidClicked RSE_OnAsteroidClicked;
@@ -12,17 +12,7 @@ public class AsteroidBehavior : MonoBehaviour
 
     public GameObject collectiblePrefab;
 
-    private void OnMouseEnter()
-    {
-        RSE_OnClick.Trigger += OnClick;
-    }
-
-    private void OnMouseExit()
-    {
-        RSE_OnClick.Trigger -= OnClick;
-    }
-
-    private void OnClick()
+    public void OnClick()
     {
         RSE_OnAsteroidClicked.Trigger(this.gameObject);
     }
@@ -49,4 +39,9 @@ public class AsteroidBehavior : MonoBehaviour
             collectible.GetComponent<Rigidbody>().AddTorque(Random.insideUnitSphere * 100);
         }
     }
+}
+
+public interface IClickable
+{
+    void OnClick();
 }
