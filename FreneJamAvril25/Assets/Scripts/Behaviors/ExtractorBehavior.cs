@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class ExtractionManager : MonoBehaviour
+public class ExtractorBehavior : MonoBehaviour
 {
-    public LSO_Extraction logic;
+    public LSO_Extractor logic;
 
     private void Awake()
     {
-        DSO_Extraction newData = logic.data;
-        logic = ScriptableObject.CreateInstance<LSO_Extraction>();
+        DSO_Extractor newData = logic.data;
+        logic = ScriptableObject.CreateInstance<LSO_Extractor>();
         logic.data = newData;
         logic.Initialize(gameObject);
     }

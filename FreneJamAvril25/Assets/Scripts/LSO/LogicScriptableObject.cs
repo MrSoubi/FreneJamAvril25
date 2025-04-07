@@ -28,4 +28,14 @@ public class LogicScriptableObject : ScriptableObject
     {
         // Default implementation (if any)
     }
+
+    public virtual void FixedUpdate()
+    {
+        // Default implementation (if any)
+    }
+
+    public virtual void OnTriggerEnter(Collider other)
+    {
+        // Default implementation (if any)
+    }
 }

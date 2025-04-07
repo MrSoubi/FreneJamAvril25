@@ -1,16 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LSO_Extraction", menuName = "LSO/Extraction")]
-public class LSO_Extraction : LogicScriptableObject
+[CreateAssetMenu(fileName = "LSO_Extractor", menuName = "LSO/Extractor")]
+public class LSO_Extractor : LogicScriptableObject
 {
-    public DSO_Extraction data;
+    public DSO_Extractor data;
 
     public override void Initialize(GameObject owner)
     {
         base.Initialize(owner);
 
-        DSO_Extraction newData = ScriptableObject.CreateInstance<DSO_Extraction>();
+        DSO_Extractor newData = ScriptableObject.CreateInstance<DSO_Extractor>();
         newData.OnAsteroidClicked = data.OnAsteroidClicked;
         newData.range = data.range;
         newData.strength = data.strength;
@@ -36,7 +36,7 @@ public class LSO_Extraction : LogicScriptableObject
             return;
         }
 
-        owner.GetComponent<ExtractionManager>().CoroutineStarter(asteroid.GetComponent<AsteroidBehavior>());
+        owner.GetComponent<ExtractorBehavior>().CoroutineStarter(asteroid.GetComponent<AsteroidBehavior>());
     }
 
 

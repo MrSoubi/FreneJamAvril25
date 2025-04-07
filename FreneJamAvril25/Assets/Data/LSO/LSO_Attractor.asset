@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba89a4da129c26347b7de32ae0cfb72c, type: 3}
-  m_Name: DSO_Extraction
+  m_Script: {fileID: 11500000, guid: 0810cb4213a72944386d22f634a164ea, type: 3}
+  m_Name: LSO_Attractor
   m_EditorClassIdentifier: 
-  OnAsteroidClicked: {fileID: 11400000, guid: 06e10718812f3534b98abd679d37698b, type: 2}
-  range: 50
-  strength: 20
-  delay: 1
+  data: {fileID: 11400000, guid: b3b29d8368d711542a40548ddd379adf, type: 2}

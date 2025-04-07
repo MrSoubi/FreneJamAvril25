@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DSO_Extraction", menuName = "DSO/Extraction")]
-public class DSO_Extraction : ScriptableObject
+[CreateAssetMenu(fileName = "DSO_Extractor", menuName = "DSO/Extractor")]
+public class DSO_Extractor : ScriptableObject
 {
     public RSE_OnAsteroidClicked OnAsteroidClicked;
 
