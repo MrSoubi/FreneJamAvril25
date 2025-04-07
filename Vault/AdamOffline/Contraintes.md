@@ -5,14 +5,14 @@ Single Scene
 # Player
 
 - [x] Player Movement
-- [ ] Cargo
-- [ ] Laser
-- [ ] Attraction
+- [x] Cargo
+- [x] Laser
+- [x] Attraction
 
 # Asteroids
 
-- [ ] HP
-- [ ] Collectibles
+- [x] HP
+- [x] Collectibles
 
 # Shops
 

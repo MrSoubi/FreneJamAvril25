@@ -8,4 +8,6 @@ public class DSO_Extractor : ScriptableObject
     public float range = 5;
     public int strength = 20;
     public float delay = 1;
+
+    public GameObject laserPrefab;
 }

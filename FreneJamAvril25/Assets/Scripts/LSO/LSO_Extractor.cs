@@ -15,6 +15,7 @@ public class LSO_Extractor : LogicScriptableObject
         newData.range = data.range;
         newData.strength = data.strength;
         newData.delay = data.delay;
+        newData.laserPrefab = data.laserPrefab;
         data = newData;
     }
 
@@ -44,13 +45,21 @@ public class LSO_Extractor : LogicScriptableObject
     {
         Debug.Log("Extraction started: " + asteroid.name);
 
+        GameObject laser = Instantiate(data.laserPrefab, owner.transform.position, Quaternion.identity);
+        LineRenderer lineRenderer = laser.GetComponent<LineRenderer>();
+        lineRenderer.positionCount = 2;
+        lineRenderer.SetPosition(0, owner.transform.position);
+        lineRenderer.SetPosition(1, asteroid.transform.position);
+
         while (asteroid != null && !IsAsteroidOutOfRange(asteroid))
         {
+            lineRenderer.SetPosition(0, owner.transform.position);
             asteroid.TakeDamage(data.strength);
             Debug.Log("Extraction: " + asteroid.name);
             yield return new WaitForSeconds(data.delay);
         }
 
+        lineRenderer.enabled = false;
         Debug.Log("Extraction finished");
     }
 
