@@ -16,3 +16,5 @@ MonoBehaviour:
   range: 50
   strength: 20
   delay: 1
+  laserPrefab: {fileID: 3732958965820585282, guid: c22b8c6a68d81bf49ac7e539402205d3,
+    type: 3}
