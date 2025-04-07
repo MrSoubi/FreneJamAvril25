@@ -18,4 +18,14 @@ public class LogicScriptableObject : ScriptableObject
     {
         // Default implementation (if any)
     }
+
+    public virtual void Enable()
+    {
+        // Default implementation (if any)
+    }
+
+    public virtual void Disable()
+    {
+        // Default implementation (if any)
+    }
 }

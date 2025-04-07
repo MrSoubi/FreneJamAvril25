@@ -316,11 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd73bcccaa80d4f49bf943bf9d769106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RSE_OnAsteroidClicked: {fileID: 11400000, guid: 06e10718812f3534b98abd679d37698b,
-    type: 2}
-  range: 150
-  strength: 20
-  delay: 1
+  logic: {fileID: 11400000, guid: eae5529c72993ea4892678efc3e54e84, type: 2}
 --- !u!114 &8887163857547126739
 MonoBehaviour:
   m_ObjectHideFlags: 0

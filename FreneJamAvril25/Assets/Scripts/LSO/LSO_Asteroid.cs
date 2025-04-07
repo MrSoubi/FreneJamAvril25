@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "LSO_Asteroid", menuName = "LSO/Asteroid")]
@@ -14,6 +13,8 @@ public class LSO_Asteroid : LogicScriptableObject
         newData.OnClick = data.OnClick;
         newData.OnAsteroidClicked = data.OnAsteroidClicked;
         newData.collectiblePrefab = data.collectiblePrefab;
+        newData.stock = data.stock;
+        newData.health = data.health;
         data = newData;
     }
 

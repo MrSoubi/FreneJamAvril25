@@ -5,9 +5,9 @@ public class AsteroidBehavior : MonoBehaviour, IClickable
     public LSO_Asteroid logic;
     private void Awake()
     {
-        DSO_Asteroid newLogic = logic.data;
+        DSO_Asteroid newData = logic.data;
         logic = ScriptableObject.CreateInstance<LSO_Asteroid>();
-        logic.data = newLogic;
+        logic.data = newData;
         logic.Initialize(gameObject);
     }
 

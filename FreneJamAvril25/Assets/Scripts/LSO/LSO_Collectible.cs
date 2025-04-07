@@ -11,6 +11,7 @@ public class LSO_Collectible : LogicScriptableObject
 
         DSO_Collectible newData = ScriptableObject.CreateInstance<DSO_Collectible>();
         newData.OnResourceCollected = data.OnResourceCollected;
+        newData.stockValue = data.stockValue;
         data = newData;
     }
 
