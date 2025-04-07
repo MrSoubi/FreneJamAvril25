@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e61ae507b221ca4fb31991a3ad1cb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 11400000, guid: e44a1075ff42c0d4da29ba390dddda16, type: 2}
 --- !u!135 &6662899639177648668
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -302,8 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae4656583002804e91a864d477ecc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
-  rotationSpeed: 1
+  logic: {fileID: 11400000, guid: f97550876d531a5469a5c7ecfc927f18, type: 2}
 --- !u!114 &2532031372913094859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,10 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b14ed9c9b26f74898a0055e27524b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RSE_OnResourceCollected: {fileID: 11400000, guid: 28c914475724e544bb9c14be9a5761fd,
-    type: 2}
-  maxStock: 100
-  currentStock: 0
+  logic: {fileID: 11400000, guid: 0cd8ae0b55a33e44cb175b469e4d20e7, type: 2}
 --- !u!1 &3853732122487374736
 GameObject:
   m_ObjectHideFlags: 0

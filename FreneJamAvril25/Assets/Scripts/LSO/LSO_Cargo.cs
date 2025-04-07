@@ -16,12 +16,12 @@ public class LSO_Cargo : LogicScriptableObject
         data = newData;
     }
 
-    public override void Enable()
+    public void Enable()
     {
         data.OnResourceCollected.Trigger += AddStock;
     }
 
-    public override void Disable()
+    public void Disable()
     {
         data.OnResourceCollected.Trigger -= AddStock;
     }

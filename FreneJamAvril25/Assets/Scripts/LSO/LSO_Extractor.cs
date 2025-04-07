@@ -18,12 +18,12 @@ public class LSO_Extractor : LogicScriptableObject
         data = newData;
     }
 
-    public override void Enable()
+    public void Enable()
     {
         data.OnAsteroidClicked.Trigger += OnAsteroidClicked;
     }
 
-    public override void Disable()
+    public void Disable()
     {
         data.OnAsteroidClicked.Trigger -= OnAsteroidClicked;
     }

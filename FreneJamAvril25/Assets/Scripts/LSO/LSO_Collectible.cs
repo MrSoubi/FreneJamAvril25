@@ -15,7 +15,7 @@ public class LSO_Collectible : LogicScriptableObject
         data = newData;
     }
 
-    public override void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collision detected with: " + collision.gameObject.name);
         if (collision.gameObject.GetComponent<SpaceshipController>() != null)
@@ -24,7 +24,7 @@ public class LSO_Collectible : LogicScriptableObject
         }
     }
 
-    public override void Destroy()
+    public void Destroy()
     {
         data.OnResourceCollected.Trigger?.Invoke(data.stockValue);
     }

@@ -14,7 +14,7 @@ public class LSO_Attractor : LogicScriptableObject
         data = newData;
     }
 
-    public override void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         CollectibleBehavior collectible;
 
@@ -25,7 +25,7 @@ public class LSO_Attractor : LogicScriptableObject
         }
     }
 
-    public override void FixedUpdate()
+    public void FixedUpdate()
     {
         foreach (Rigidbody rb in data.m_Rigidbodies)
         {

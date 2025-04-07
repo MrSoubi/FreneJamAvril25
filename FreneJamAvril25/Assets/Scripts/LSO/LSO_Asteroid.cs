@@ -33,7 +33,7 @@ public class LSO_Asteroid : LogicScriptableObject
         }
     }
 
-    public override void Destroy()
+    public void Destroy()
     {
         for (int i = 0; i < data.stock; i++)
         {
