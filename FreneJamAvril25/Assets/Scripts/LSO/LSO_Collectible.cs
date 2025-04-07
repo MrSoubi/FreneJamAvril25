@@ -9,9 +9,9 @@ public class LSO_Collectible : LogicScriptableObject
     {
         base.Initialize(owner);
 
-        RSE_OnResourceCollected tmp = this.data.OnResourceCollected;
-        this.data = ScriptableObject.CreateInstance<DSO_Collectible>();
-        this.data.OnResourceCollected = tmp;
+        DSO_Collectible newData = ScriptableObject.CreateInstance<DSO_Collectible>();
+        newData.OnResourceCollected = data.OnResourceCollected;
+        data = newData;
     }
 
     public override void OnCollisionEnter(Collision collision)

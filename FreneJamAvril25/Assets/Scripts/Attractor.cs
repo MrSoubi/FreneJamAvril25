@@ -8,9 +8,9 @@ public class Attractor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Collectible collectible;
+        CollectibleBehavior collectible;
 
-        if (other.TryGetComponent<Collectible>(out collectible))
+        if (other.TryGetComponent<CollectibleBehavior>(out collectible))
         {
             Rigidbody collectibleRigidbody = collectible.gameObject.GetComponent<Rigidbody>();
             m_Rigidbodies.Add(collectibleRigidbody);

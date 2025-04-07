@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class CollectibleBehavior : MonoBehaviour
 {
     public LSO_Collectible logic;
 
     private void Awake()
     {
-        DSO_Collectible tmp = logic.data;
+        DSO_Collectible newLogic = logic.data;
         logic = ScriptableObject.CreateInstance<LSO_Collectible>();
-        logic.data = tmp;
+        logic.data = newLogic;
         logic.Initialize(gameObject);
     }
 

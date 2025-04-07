@@ -119,10 +119,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f082e6f104854c92547c94ae7fc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RSE_OnClick: {fileID: 11400000, guid: 6e2946df03367064d90d9b06924f6624, type: 2}
-  RSE_OnAsteroidClicked: {fileID: 11400000, guid: 06e10718812f3534b98abd679d37698b,
-    type: 2}
-  stock: 25
-  health: 100
-  collectiblePrefab: {fileID: 4355033977926334018, guid: fdb50d56ae1e2c24a85ddb623b31a369,
-    type: 3}
+  logic: {fileID: 11400000, guid: ea1b5169acf23444ab34cb07eb1bbe04, type: 2}

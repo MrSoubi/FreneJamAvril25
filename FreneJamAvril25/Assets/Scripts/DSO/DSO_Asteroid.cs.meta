@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 29f2a20b909e572458f15776d3bf1912
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - OnClick: {fileID: 11400000, guid: 6e2946df03367064d90d9b06924f6624, type: 2}
+  - OnAsteroidClicked: {fileID: 11400000, guid: 06e10718812f3534b98abd679d37698b,
+      type: 2}
+  - collectiblePrefab: {fileID: 4355033977926334018, guid: fdb50d56ae1e2c24a85ddb623b31a369,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
