@@ -1,0 +1,21 @@
+using UnityEngine;
+
+public class LogicScriptableObject : ScriptableObject
+{
+    protected GameObject owner;
+
+    public virtual void Initialize(GameObject owner)
+    {
+        this.owner = owner;
+    }
+
+    public virtual void OnCollisionEnter(Collision collision)
+    {
+        // Default implementation (if any)
+    }
+
+    public virtual void Destroy()
+    {
+        // Default implementation (if any)
+    }
+}

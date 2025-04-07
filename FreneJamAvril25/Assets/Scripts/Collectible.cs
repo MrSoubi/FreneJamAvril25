@@ -1,23 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    public RSE_OnResourceCollected RSE_OnResourceCollected;
+    public LSO_Collectible logic;
 
-    public int stockValue = 10;
+    private void Awake()
+    {
+        DSO_Collectible tmp = logic.data;
+        logic = ScriptableObject.CreateInstance<LSO_Collectible>();
+        logic.data = tmp;
+        logic.Initialize(gameObject);
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<SpaceshipController>() != null)
-        {
-            Destroy(gameObject);
-        }
+        logic.OnCollisionEnter(collision);
     }
 
     private void OnDestroy()
     {
-        RSE_OnResourceCollected.Trigger?.Invoke(stockValue);
+        logic.Destroy();
     }
 }

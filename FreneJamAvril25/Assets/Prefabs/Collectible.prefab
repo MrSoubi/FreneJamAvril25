@@ -148,6 +148,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b324b2341cdc5419145cd4fd3a8f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RSE_OnResourceCollected: {fileID: 11400000, guid: 28c914475724e544bb9c14be9a5761fd,
-    type: 2}
-  stockValue: 10
+  logic: {fileID: 11400000, guid: 2030a585e57404f488b45adb31a3849e, type: 2}
